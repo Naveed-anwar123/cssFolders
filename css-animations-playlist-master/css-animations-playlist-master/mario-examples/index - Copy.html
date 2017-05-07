@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <title>Mario Kart Animations</title>
+  <style>
+  .cloud{
+  	position: absolute;
+
+	animation-name: clouds;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+  }
+  .cloud1{
+  	margin-top: 100px;
+	width: 100px;
+	height: 100px;
+	animation-name: clouds;
+	animation-fill-mode: backwards;
+	animation-timing-function: linear;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes clouds{
+	 from{transform: translateX(1200px)}
+  to{transform: translateX(-100px)}
+	
+  }
+  
+  </style>
+</head>
+<body style="background-color:#32b1ab">
+  <div class="sky">
+  	<img class="cloud" src="img/cloud.png">
+  	<img class="cloud1" src="img/cloud.png">
+  </div>
+  
+  
+  </div>
+</body>
